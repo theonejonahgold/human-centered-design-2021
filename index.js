@@ -1,13 +1,13 @@
 import express from 'express'
 import http from 'http'
 import path from 'path'
-import { Server as socketIo } from 'socket.io'
+import { Server as SocketIO } from 'socket.io'
 
 const port = process.env.PORT || 3000
 
 const app = express()
 const server = http.createServer(app)
-const io = new socketIo(server)
+const io = new SocketIO(server)
 
 app.use(express.static(path.resolve('public')))
 
@@ -24,5 +24,5 @@ io.on('connection', (socket) => {
 })
 
 server.listen(port, () => {
-  console.log('listening on port ', port)
+  console.log('listening on port', port)
 })
