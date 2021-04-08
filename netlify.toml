@@ -1,7 +1,6 @@
 [build]
-    base = "web/"
-    publish = 'dist/'
-    command = 'yarn build'
+    publish = 'web/dist'
+    command = 'yarn workspace @hcd/web build'
 
 [[redirects]]
     from = "/*"
