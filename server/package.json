@@ -1,0 +1,18 @@
+{
+  "name": "@hcd/server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "watch:dist": "nodemon dist",
+    "watch:ts": "nodemon -w src --exec \"tsc\"",
+    "watch": "concurrently \"yarn:watch:dist\" \"yarn:watch:ts\"",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {}
+}

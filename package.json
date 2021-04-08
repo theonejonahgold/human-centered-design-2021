@@ -2,9 +2,14 @@
   "name": "hcd",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "workspaces": [
+    "web",
+    "server"
+  ],
   "scripts": {
-    "start": "node index.js"
+    "watch": "concurrently \"yarn:watch:server\" \"yarn:watch:web\"",
+    "watch:web": "yarn workspace @hcd/web watch",
+    "watch:server": "yarn workspace @hcd/server watch"
   },
   "type": "module",
   "repository": {
@@ -16,5 +21,11 @@
     "express": "^4.17.1",
     "handlebars": "^4.7.7",
     "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
   }
 }
