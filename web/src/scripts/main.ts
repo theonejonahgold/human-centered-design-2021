@@ -1,7 +1,7 @@
 import io from 'socket.io-client'
 import * as faceapi from 'face-api.js'
 
-const socketUrl = import.meta.env.SOCKET_URL
+const socketUrl = import.meta.env.VITE_SOCKET_URL
 if (!socketUrl) throw 'socketUrl not found in environment'
 
 const socket = io()

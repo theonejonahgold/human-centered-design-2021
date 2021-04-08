@@ -96,6 +96,7 @@ section form {
 }
 
 section form input {
+  appearance: none;
   --border: white;
   margin: 0;
   padding: 0 1rem;
@@ -105,7 +106,7 @@ section form input {
   border-bottom-left-radius: 2rem;
   border: 1px solid;
   border-color: var(--border);
-  opacity: 80%;
+  background: white;
   outline: none;
 }
 
