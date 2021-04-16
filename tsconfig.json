@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "strict": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
@@ -9,7 +12,6 @@
     "sourceMap": true,
     "skipLibCheck": true
   },
-  "include": ["web/src", "server/src"],
   "exclude": [
     "node_modules"
   ]

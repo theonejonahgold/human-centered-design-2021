@@ -5,8 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "watch:dist": "nodemon dist",
-    "watch:ts": "nodemon -w src --exec \"tsc\"",
+    "watch:dist": "nodemon -w dist dist",
+    "watch:ts": "tsc --watch",
     "watch": "concurrently \"yarn:watch:dist\" \"yarn:watch:ts\"",
     "build": "tsc"
   },
