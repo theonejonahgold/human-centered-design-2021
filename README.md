@@ -4,6 +4,72 @@ Body language overbrengen met tekst chat.
 
 [Live link](https://hcd-chat.netlify.app)
 
+# Week 3
+
+Voor de laatste testronde ben ik teruggegaan naar de tekentafel, en heb ik me gefocust op de feature in plaats van de implementatie ervan in verschillende omgevingen. Ik ben de feedback die ik in week 1 heb gekregen nog eens goed doorgenomen, en heb deze samen met de punten van week 2 uitgewerkt tot een concept die focust op meerdere manieren om emoties over te brengen in een chat app.
+
+## Concept
+
+Een chat functie waarbij je, door middel van verschillende functies, emotie kan meegeven aan een chatbericht.
+
+![Screenshot van het concept](docs/concept-4.png)
+
+### Emotie inputs
+
+- Facial recognition
+- Typsnelheid
+- Woordkeuze... (stiekem scheldwoorden, maar dat heb ik er niet bij gezet).
+
+### Emotie outputs
+
+- Achtergrondkleur
+- Animaties
+- Emojis
+- Berichten in verhalende vorm vertellen
+
+## Testen
+
+### Wat ga ik doen
+
+Ik ga meerdere aannames testen, die ik tijdens het testen zal voorleggen om ze te bevestigen of onkrachten. De test zal erg freeform zijn, ik zal Eric namelijk de vrije keuze geven om alles in eigen tempo te testen.
+
+### Aannames
+
+- Andere video inputs als handbewegingen of posturen zijn overbodig.
+- Emojis kunnen bruikbaar zijn voor dit probleem, mits ze voorspelbaar gebonden zijn aan emoties.
+- Animaties zijn een leuke feature als ze wat extravaganter zijn.
+
+### Vragen
+
+- **Wat spreekt jou het meeste aan?**: Dat er meerdere dingen tegelijk gebeuren, meerdere opties hebben zijn voorkeur.
+- **Wat werkt voor jou niet?**: Woordkeuze is riskant, kan het beste in combinatie met gedaan worden. Typsnelheid voegt weinig toe. Individuele opties breken snel af. Extreme animaties zijn grappig, maar niet functioneel. Het voegt wel gamification toe, en dat spreekt hem wel aan.
+- **Wat mis je in dit prototype?**: Emoties op elkaar in laten spelen lijkt een leuk idee.
+
+### Observaties
+
+- Verhalende vorm ander lettertype.
+- Emoties kloppen niet altijd.
+- Emojis gingen gelijk aan.
+- Gezichtsherkening ging niet van harte, Onder andere door zijn bril.
+- Eric kijkt naar zijn toetsenbord wanneer hij typt.
+- Woordkeuze gaat gelijk uit op positief.
+- Je moet het vocabulair achterhalen van mensen om woordkeuze goed te laten werken.
+- Samen praten is een leuke feature.
+- Alle mogelijke opties waren niet al te duidelijk.
+- Meerdere outputs moeten elkaar aanvullen, niet meer van hetzelfde bieden.
+- Comics spreken hem zeer aan.
+- Eric blijf het liefst zijn muis gebruiken i.p.v. te switchen van en naar zijn toetsenbord.
+
+## Wat ik meeneem naar volgende week
+
+- Meer gamification patterns toevoegen.
+- Stripboekenstijl toepassen.
+- De verschillende input en output opties onboarden.
+- Woordkeuze uitbreiden voor andere emoties (spectrum)?
+- Het over- en weer spelen van emoties is een leuk idee.
+- Kijken naar een optie om spraak toe te voegen als een manier om berichten te sturen.
+- Styling van verschillende vormen van output te veranderen.
+
 # Week 2
 
 Voor week twee ben ik aan de slag gegaan met het uitwerken van het idee van de chat app in meerdere vormen. Hierbij heb ik twee concepten bedacht die ik heb gevormd tot statische prototypes.
@@ -44,7 +110,7 @@ Je hebt net een nieuw programma gedownloadt genaamd Emotion chat. Dit programma 
 - **Wat vind je van de plug-in implementatie tegenover de losstaande chat app?:** Eigenlijk al beantwoord, maar een integratie met andere chat apps lijkt veel fijner
 - **Hoe makkelijk is het navigeren met een muis naar pop-ups?:** Dat is geen probleem.
 
-### Opmerkingen van tijdens het gesprek
+### Opmerkingen
 
 - Voeg meerdere bronnen toe om lichaamstaal op te pikken.
 - Breidt de manieren waarop emotie wordt getoond uit.
@@ -55,15 +121,15 @@ Je hebt net een nieuw programma gedownloadt genaamd Emotion chat. Dit programma 
 
 ### Samenvatting
 
-De manier waarop de prototypes waren opgezet kwam niet lekker over op Eric. Omdat er geen directe interactie is, kon hij geen goede indruk krijgen van de werking van de interactie. Hierdoor was het lastig om de verschillende iteraties te testen.
+De manier waarop de prototypes waren opgezet kwam niet lekker over op Eric. Omdat er geen directe interactie is, kon hij geen goede indruk krijgen van de werking. Hierdoor was het lastig om de verschillende uitwerkingen te testen.
 
-### Wat ik meeneem naar de volgende iteratie
+### Wat ik meeneem naar volgende week
 
 - Focussen op het experimenteren van drie aspecten.
   - Input van lichaamstaal.
   - Tonen van lichaamstaal.
   - Flows van het verzenden van berichten.
-- De functies conceptualiseren als een plug-in voor andere chat apps.
+- Focussen op de functie zelf, en niet de implementatie.
 
 # Week 1
 
@@ -84,13 +150,13 @@ De eerste testsessie was voornamelijk een kennismaking met Eric. Leren wat hij l
 
 Het testen zelf ging goed. De eerste indruk van het experiment was positief. Eric ging zelfs een beetje spelen met camera. Hij probeerde meerdere emoties uit, en vond het verder intuïtief werken.
 
-### Wat was de feedback?
+### Feedback
 
 - Sommige mensen kunnen kleuren niet goed zien, dus dat als enige manier gebruiken is niet toegankelijk.
 - Dit experiment komt lichtelijk als verwacht, gezien hij wel had vernomen dat een camera nodig zou zijn.
 - Tekst analyse zou ook een mooi datapunt zijn, naast gezichtsemotie.
 
-### Wat neem ik mee?
+### Wat ik meeneem naar volgende week
 
 Van het kennismakingsgesprek neem ik het volgende mee:
 
