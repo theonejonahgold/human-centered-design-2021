@@ -2,7 +2,7 @@
 
 Body language overbrengen met tekst chat.
 
-[Live link](https://hcd-chat.herokuapp.com)
+[Live link](https://hcd-chat.netlify.app)
 
 # Week 2
 
