@@ -156,6 +156,15 @@ aside form label + label {
 aside form input {
   margin-left: auto;
 }
+
+aside > div {
+  display: grid;
+}
+
+aside > div * {
+  grid-row: 1;
+  grid-column: 1;
+}
 /* #endregion */
 
 /* #region Emotions */
