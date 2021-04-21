@@ -5,15 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Body chat</title>
-    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
 
   <body>
-    <main>
+    <header>
       <h1>Body chat</h1>
+    </header>
+    <main>
       <ul></ul>
       <form data-chat>
-        <input type="text" required name="message" autocomplete="off" />
+        <input
+          autofocus
+          required
+          type="text"
+          name="name"
+          autocomplete="off"
+          placeholder="Je gebruikersnaam"
+        />
+        <input
+          required
+          type="text"
+          name="message"
+          autocomplete="off"
+          placeholder="Je bericht!"
+        />
         <button>Send</button>
       </form>
     </main>
@@ -27,7 +43,15 @@
             <legend>De achtergrondkleur aan te passen van:</legend>
             <label>
               Alles
-              <input type="radio" name="bg-color" value="all" />
+              <input type="radio" name="bg-color" value="all" checked />
+            </label>
+            <label>
+              De chat
+              <input type="radio" value="chat" name="bg-color" />
+            </label>
+            <label>
+              Het chatbericht
+              <input type="radio" value="message" name="bg-color" />
             </label>
             <label>
               Niets
@@ -42,8 +66,16 @@
               <input type="radio" value="all" name="animation" />
             </label>
             <label>
+              De chat
+              <input type="radio" value="chat" name="animation" />
+            </label>
+            <label>
+              Het chatbericht
+              <input type="radio" value="message" name="animation" />
+            </label>
+            <label>
               Niets
-              <input type="radio" value="none" name="animation" />
+              <input type="radio" value="none" name="animation" checked />
             </label>
           </fieldset>
 
@@ -59,7 +91,6 @@
 
         <fieldset>
           <legend>Lichaamstaal meten door...</legend>
-
           <label>
             Te kijken naar gezichtsuitdrukkingen
             <input type="checkbox" name="webcam" />
@@ -69,11 +100,12 @@
             <input type="checkbox" name="type-speed" />
           </label>
           <label>
-            Woordkeuze.
+            Woordkeuze..
             <input type="checkbox" name="swears" />
           </label>
         </fieldset>
       </form>
+
       <div>
         <video width="256" height="144"></video>
         <canvas></canvas>

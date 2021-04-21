@@ -1,15 +1,35 @@
 import * as faceapi from 'face-api.js'
 import { registerSettingsChangeListener, Settings } from '../settings'
 
+let emotion: string
+
+const emotionDictionary = new Map([
+  ['neutral', 'neutraal'],
+  ['happy', 'blij'],
+  ['sad', 'verdrietig'],
+  ['angry', 'boos'],
+  ['fearful', 'bang'],
+  ['disgusted', 'walgend'],
+  ['surprised', 'verrast'],
+])
+
 export default async function initWebcam(initialSettings: Settings) {
   await loadFacialRecognitionModels()
   let stream: MediaStream | undefined
   registerSettingsChangeListener(async settings => {
-    if (!settings.input.webcam) return stopWebcam(stream)
-    stream = await startWebcam()
+    if (!settings.input.webcam) {
+      stopWebcam(stream)
+      stream = undefined
+      return
+    }
+    if (settings.input.webcam && !stream) stream = await startWebcam()
   })
   if (!initialSettings.input.webcam) return
   stream = await startWebcam()
+}
+
+export function retrieveResult() {
+  return emotionDictionary.get(emotion)!
 }
 
 async function loadFacialRecognitionModels() {
@@ -96,6 +116,7 @@ function detectEmotion(this: HTMLVideoElement) {
           valueStatus = value
         }
       }
+      emotion = status
     })
   }, 1000) as unknown) as number
 }

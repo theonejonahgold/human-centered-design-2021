@@ -7,11 +7,13 @@ const server = createServer()
 const io = new Server(server, { cors: { origin: '*' } })
 
 io.on('connection', socket => {
-  socket.on('message', message => io.emit('message', message))
-
-  socket.on('disconnect', () => {
-    io.emit('server-message')
-  })
+  socket.on('message', message =>
+    io.sockets.allSockets().then(sockets =>
+      sockets.forEach(s => {
+        if (s !== socket.id) socket.to(s).emit('message', message)
+      })
+    )
+  )
 })
 
 server.listen(port, () => {

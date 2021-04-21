@@ -34,18 +34,13 @@ const settingsCallbacks: SettingsCallback[] = []
 
 export function registerSettingsChangeListener(cb: SettingsCallback) {
   settingsCallbacks.push(cb)
-  setTimeout(() => {
-    settingsProxy.input.swears = true
-  }, 500)
 }
 
 export default function initSettings() {
   document
     .querySelector('[data-settings]')!
     .querySelectorAll('input')
-    .forEach(input => {
-      input.addEventListener('change', inputChangeHandler)
-    })
+    .forEach(input => input.addEventListener('change', inputChangeHandler))
 }
 
 function inputChangeHandler(this: HTMLInputElement) {
@@ -88,7 +83,7 @@ export interface Settings extends Record<string, any> {
   }
 }
 
-type OutputLocation = 'all' | 'none'
+export type OutputLocation = 'all' | 'chat' | 'message' | 'none'
 
 type SettingsInputNames =
   | 'bg-color'
