@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-text: Poppins, sans-serif;
+  --font-comic: Bangers, sans-serif;
+
+  --white: #f4f4f4;
+  --black: #202020;
+  --blue: #235789;
+  --peach: #f1bf98;
+  --green: #668f80;
+  --red: #db504a;
+
+  --text-primary: var(--black);
+  --text-secondary: var(--white);
+  --primary: var(--blue);
+  --secondary: var(--peach);
+  --tertiary: var(--red);
+  --success: var(--green);
+
+  --br: 5px;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgb(149, 149, 149);
+  font-family: var(--font-text);
+}
+
+#svelte {
+  width: 50rem;
+  height: 40rem;
+  background: rgb(255, 255, 255);
+  border-radius: var(--br);
+  overflow: hidden;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid darkgrey;
+}
+
+legend {
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}

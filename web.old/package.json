@@ -1,0 +1,20 @@
+{
+  "name": "@hcd/web",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "watch": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "face-api.js": "^0.22.2",
+    "socket.io-client": "^4.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^4.1.11",
+    "sass": "^1.32.11",
+    "vite": "^2.1.5"
+  }
+}
