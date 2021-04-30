@@ -1,5 +1,16 @@
 <script>
+  import { goto, prefetch, prefetchRoutes } from '$app/navigation'
+
   import Button from '$lib/components/atoms/Button.svelte'
+  import { calibrationDone } from '$lib/stores/settings'
+  import { onMount } from 'svelte'
+  import { get } from 'svelte/store'
+
+  onMount(async () => {
+    await prefetchRoutes(['/app/*'])
+    const redirect = get(calibrationDone)
+    if (redirect) goto('/app', { replaceState: true })
+  })
 </script>
 
 <style lang="scss">

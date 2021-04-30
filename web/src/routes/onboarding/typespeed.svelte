@@ -25,11 +25,14 @@
 {:else}
   <h1>Resultaat</h1>
   <p>
-    Volgens onze test type je gemiddeld {$calibrationSettings.wpm} woorden per minuut.
+    Volgens onze test type je gemiddeld <strong>
+      {$calibrationSettings.wpm} woorden per minuut
+    </strong>.
   </p>
   <p>
     Dit is slechts een indicatie, en zal zich aanpassen naarmate je Body Chat
-    vaker gebruikt. Je kan de test opnieuw doen in de instellingen.
+    vaker gebruikt. Je kan het aantal woorden per minuut altijd aanpassen in de
+    instellingen.
   </p>
   <Button center large type="link" href="/onboarding/wordchoice">
     Doorgaan

@@ -1,44 +1,66 @@
-# Body Language
-
-Body language overbrengen met tekst chat.
+# Body chat
 
 [Live link](https://hcd-chat.netlify.app)
 
+Emoties overbrengen via tekst is af en toe erg ingewikkeld. Iedereen geeft zijn eigen mening aan emoji's, en het er zijn er tegenwoordig zoveel dat je soms door de bomen het bos niet meer ziet. Gifjes zijn ook niet praktisch, omdat ze meer als grap bedoeld zijn dan als een manier om emotie over te brengen. Met Body Chat wil ik dit probleem oplossen, door manieren te vinden om emoties een input én een output te geven in tekstchat.
+
 # Inhoudsopgave
 
-- [Introductie]()
-- [User Scenario]()
-- [Design Challenge]()
-- [Features]()
-- [Week 1]()
-  - [Concept]()
-  - [Testsessie]()
-  - [Wat ik meeneem naar volgende week]()
-- [Week 2]()
-  - [Concept]()
-  - [Testsessie]()
-  - [Wat ik meeneem naar volgende week]()
-- [Week 3]()
-  - [Concept]()
-  - [Testsessie]()
-  - [Wat ik meeneem naar volgende week]()
-- [Week 4]()
-  - [Concept]()
-  - [Vervolg]()
-- [Exclusive Design]()
-  - [Study situation]()
-  - [Prioritise identity]()
-  - [Ignore conventions]()
-  - [Add nonsense]()
-- [Conclusie]()
-
-# Introductie
+- [User Scenario](#user-scenario)
+- [Design Challenge](#design-challenge)
+- [Features](#features)
+- [Week 1](#week-1)
+- [Week 2](#week-2)
+- [Week 3](#week-3)
+- [Week 4](#week-4)
+- [Exclusive Design](#exclusive-design)
+  - [Study situation](#study-situation)
+  - [Prioritise identity](#prioritise-identity)
+  - [Ignore conventions](#ignore-conventions)
+  - [Add nonsense](#add-nonsense)
+- [Conclusie](#conclusie)
 
 # User Scenario
 
+Eric Groot Kormelink is een interaction designer uit Amsterdam. Hij houdt van games, muziek (power-chords in het bijzonder), heeft een gezond gevoel voor humor en is goed in zijn vak. Eric is ook fysiek beperkt. Zijn ledematen zijn tijdens de zwangerschap vergroeid, waardoor hij zijn benen niet kan gebruiken en zijn handen gekruist staan. Het maakt hem niet minder mens, en dat is zeker naar voren gekomen in de weken dat ik met hem mijn oplossingen voor zijn probleem heb mogen testen.
+
+Hij heeft namelijk veel moeite met het gebruiken van emoji's. Iedereen geeft een eigen mening aan emoji's, er zijn tegenwoordig zoveel emoji's dat het makkelijk is om een emoji te kiezen die eigenlijk net niet lekker aansluit bij wat je beodoelt, en het kan soms flink wat tijd kosten om de emoji te vinden die je per sé wilt hebben.
+
+Eric wilt heel graag een manier hebben om emotie en lichaamstaal over te brengen in chat-apps als Signal, Telegram, WhatsApp, etc. Zo is er geen ambiguïteit in welke emotie wordt bedoeld met emoji's, en kan je ook op onderzoek gaan naar ongewone manieren om emoties over te brengen in tekst-chat.
+
 # Design Challenge
 
+Ik wil voor Eric een tool maken waarmee hij op meerdere manieren emotie op kan nemen en meesturen met een chatbericht. De manier waarop de emoties in tekstberichten worden getoond zijn volledig instelbaar, met een klein snufje van Eric's en mijn persoonlijkheid daarin verwerkt.
+
 # Features
+
+## Must haves
+
+- [x] Emotie input via gezichtsuitdrukking
+- [x] Emotie input via typesnelheid
+- [x] Emotie input via woordkeuze
+- [x] Achtergrondkleuren
+- [x] Animaties
+- [x] Achievements
+- [x] Onboarding voor de input en output van emoties.
+
+## Should haves
+
+- [x] Ontdekte emoties counter
+- [x] Aanpasbare standaard typesnelheid
+- [x] Aanpasbare woordkeuze instellingen
+- [ ] Emotie en tekstinput via spraak
+- [ ] Emotie input via handgebaren
+
+## Could haves
+
+- [ ] Aanpasbare kleuren
+- [ ] Op-elkaar-inspelende emoties
+  - [x] Demo van hoe dat zou kunnen werken
+
+## Would like to haves
+
+- [ ] Combo's (emoties, bepaalde soort woorden, etc.)
 
 # Week 1
 
@@ -209,16 +231,44 @@ Ik ga meerdere aannames testen, die ik tijdens het testen zal voorleggen om ze t
 
 ## Concept
 
+In week 4 heb ik me vooral gefocust op het aanvullen van de features die ik al had met een onboarding, achievements en een lijst met ontdekte emoties. Je kan de verschillende inputs nu ook instellen naar persoonlijke voorkeur, en de output-instellingen zijn net iets overzichtelijker. Ook heb ik een demo gemaakt om te kijken hoe de samenhang van emoties te werk zou kunnen gaan.
+
 ## Vervolg
+
+In het vervolg zou ik graag willen kijken naar nog meer verschillende manieren van input, de samen- of tegenwerking van emoties en het toevoegen van extra gamification-patterns als woord- of emotie-combo's. Het gehele ontwerp omdopen naar een subtiele stripboekenstijl lijkt mij een goede aanvulling op de laatste feature ook.
 
 # Exclusive Design
 
 ## Study situation
 
-## Prioritise identity
+Study situation houdt in dat je de situatie van degene waarvoor je ontwerpt onderzoekt en gebruikt om het ontwerpprobleem op te lossen.
+
+Ik heb dit principe toegepast door te kijken naar waar Eric moeite mee heeft, en hem dit makkelijker voor hem te maken. Eric heeft bijvoorbeeld moeite met snel typen, dus heb ik een typesnelheidstest gemaakt die kijkt naar wat de gemiddelde typesnelheid is van de gebruiker om zo een "baseline" typesnelheid op te zetten.
 
 ## Ignore conventions
 
+Ignore conventions zet out-of-the-box denken centraal, en moedigt je aan om te experimenten alsof design patterns niet bestaan. Veel design patterns werken niet voor iedereen, dus is het belangrijk dat je gaat kijken wat wel werkt voor de mensen voor wie je ontwerpt, en dit ook goed te testen met die mensen.
+
+Ik heb dit toegepast door op verschillende manieren te kijken naar hoe Eric zijn computer het makkelijkst gebruikt voor tekst chat. Hij zit in een hele andere situatie dan ik, dus ik moet ervoor zorgen dat de tools die ik hem geef om emotie op te nemen werken voor hem, niet alleen voor mij. Ik heb dit bijvoorbeeld gedaan door typesnelheid te testen i.p.v. een standaard aantal woorden per minuut te gebruiken voor verschillende emoties, en voor woordkeuze meer fine-tuning te geven, zodat de basis al flink is toegespitst op wie de tool gebruikt.
+
+## Prioritise identity
+
+Prioritise identity is het principe wat de persoonlijkheid van de persoon voor wie je ontwerpt centraal stelt. Dit te doen door delen van deze persoonlijkheid mee te nemen in het ontwerp.
+
+Eric vindt gamen heel erg leuk, en hij is een interactieontwerper. Toen ik hem het prototype van week 3 voorschotelde, vond hij de uitbundige animaties echt fantastisch, en moest hij hardop lachen. Hij wilde ze gelijk allemaal proberen te ontdekken, om te zien welke animatie er tevoorschijn zou komen. Deze feedback heb ik ten harte genomen, door een teller te maken die bijhoudt hoeveel emoties je hebt ontdekt en achievements toe te voegen voor bepaalde aantallen ontdekte emoties en een paar moeiljk-te-bereiken emoties (welke dat zijn mag je zelf uitzoeken).
+
 ## Add nonsense
 
+Add nonsense is het principe dat mooi samenhangt met prioritise identity (althans, dat vind ik). Door nonsens toe te voegen, geef je je tool karakter, en begint het los te komen van de massa aan tools die al bestaan op het internet. De dingen die mensen leuk vinden zijn vaak genoeg nonsens namelijk.
+
+Ik heb dit toegepast door zeer uitbundige animaties toe te voegen, achievements toe te voegen in een chat-app tool, een optie toegevoegd om tekstberichten in verhalende vorm te vertellen. Zo hoop ik dat Eric een zeer leuke en persoonlijke ervaring heeft.
+
 # Conclusie
+
+Deze afgelopen 4 weken waren enorm leerzaam voor mij. Ik heb heel erg out-of-the-box kunnen denken en een zeer unieke ervaring kunnen ontwerpen voor Eric. De design principes van Exclusive Design zijn erg eye-opening. Vooral omdat het mij in een andere mindset heeft gebracht. Ik ging echt mijn aannames op de proef stellen, in plaats van ze proberen te bevestigen. Ik ben ook minder bang om lekker gek te doen, want het pakt vaak genoeg zeer goed uit!
+
+Het werdt mij steeds duidelijker wat de needs waren van Eric. Ook met dank aan het gesprek met Thijs wat ik had in week 2. Het maakte een stuk duidelijker dat ik een stap terug moest zetten en te kijken naar wat de essentie is van Eric's probleem, en dat aanpakken. Ik heb hierdoor geleerd zijn needs centraal te zetten, en vandaaruit te ontwerpen.
+
+In week 2 had ik erg veel moeite met itereren. Het was alsof ik was vergeten wat mijn inzichten van de eerste week waren, en met een schone lei was begonnen. Ik was helemaal de weg kwijt, maar ik heb het idee dat ik met in week 3 goed heb herpakt en sterker terug ben gekomen dan dat ik weg ben gegaan. Voelt een beetje aan als een redemption arc. Ik heb in ieder geval een new-found appreciation voor de manier waarop we hebben getest deze weken; heel free-form, hands-off en observerend in plaats van gericht. Ik denk dat je zo veel meer inzichten krijgt dan wanneer je een bepaald scenario doorloopt met je gebruiker, omdat je de manier waarop de gebruiker je ontwerp gebruikt niet aan banden legt.
+
+Al met al was dit een extreem leerzaam vak voor mij, en ben erg blij met waar ik ben gekomen in 4 weken tijd.
