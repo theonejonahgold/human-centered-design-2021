@@ -1,9 +1,5 @@
 [build]
-    base = '/'
-    publish = 'web/dist'
-    command = 'yarn workspace @hcd/web build'
-
-[[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+    base = "web/"
+    command = "yarn build"
+    publish = "build/"
+    functions = "functions/"

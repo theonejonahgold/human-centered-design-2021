@@ -1,20 +1,34 @@
 {
   "name": "@hcd/web",
-  "version": "1.0.0",
-  "license": "MIT",
+  "version": "0.0.1",
   "scripts": {
-    "watch": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "face-api.js": "^0.22.2",
-    "socket.io-client": "^4.0.1"
+    "watch": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "start": "svelte-kit start",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
   },
   "devDependencies": {
+    "@sveltejs/adapter-netlify": "^1.0.0-next.10",
+    "@sveltejs/adapter-node": "^1.0.0-next.17",
+    "@sveltejs/kit": "1.0.0-next.89",
     "autoprefixer": "^10.2.5",
-    "cssnano": "^4.1.11",
+    "bufferutil": "^4.0.3",
+    "encoding": "^0.1.13",
+    "prettier": "~2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
     "sass": "^1.32.11",
-    "vite": "^2.1.5"
+    "svelte": "^3.29.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0",
+    "utf-8-validate": "^5.0.4",
+    "vite": "^2.1.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "face-api.js": "^0.22.2",
+    "socket.io-client": "^4.0.1",
+    "svelte-emoji": "^1.0.2"
   }
 }

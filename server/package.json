@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node dist",
     "watch:dist": "nodemon -w dist dist",
-    "watch:ts": "tsc --watch",
+    "watch:ts": "nodemon -w src -e ts -x \"tsc\"",
     "watch": "concurrently \"yarn:watch:dist\" \"yarn:watch:ts\"",
     "build": "tsc"
   },
