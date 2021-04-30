@@ -1,10 +1,5 @@
 [build]
-    base = 'web/'
-    command = 'cd web && yarn build'
-    publish = "web/build/"
-    functions = "web/functions/"
-
-[[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
+    base = "web/"
+    command = "yarn build"
+    publish = "build/"
+    functions = "functions/"
