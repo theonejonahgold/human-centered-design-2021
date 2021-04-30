@@ -1,8 +1,8 @@
 [build]
     base = 'web/'
     command = 'cd web && yarn build'
-    publish = "build/"
-    functions = "functions/"
+    publish = "web/build/"
+    functions = "web/functions/"
 
 [[redirects]]
     from = "/*"
