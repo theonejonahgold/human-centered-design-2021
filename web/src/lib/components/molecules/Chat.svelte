@@ -1,13 +1,13 @@
 <script>
   import { browser } from '$app/env'
 
-  import { afterUpdate, beforeUpdate } from 'svelte'
+  import { afterUpdate } from 'svelte'
   import ChatMessage from '../atoms/ChatMessage.svelte'
 
   export let messages: Set<Message>
+  export let battleDemo = false
 
   let ulEl: HTMLUListElement
-  let battleDemo = false
 
   afterUpdate(() => {
     if (!browser) return

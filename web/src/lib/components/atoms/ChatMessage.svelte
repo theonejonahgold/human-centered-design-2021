@@ -6,13 +6,17 @@
   export let emotion: Emotion
   export let demo = false
 
+  $: console.log(demo)
+
   $: bgColor =
     $outputSettings.backgroundColor === 'all' ||
-    $outputSettings.backgroundColor === 'message'
+    $outputSettings.backgroundColor === 'message' ||
+    demo
 
   $: animation =
-    $outputSettings.animation === 'all' ||
-    $outputSettings.animation === 'message'
+    !demo &&
+    ($outputSettings.animation === 'all' ||
+      $outputSettings.animation === 'message')
 </script>
 
 <style lang="scss">
@@ -55,7 +59,7 @@
   }
 
   @mixin create-emotion($bg-color, $message-animation) {
-    @at-root #{selector.unify(&, '.animation:not(.no-animate)')} {
+    @at-root #{selector.unify(&, '.animation')} {
       animation: $message-animation 1.5s ease-in-out;
     }
 
@@ -432,9 +436,8 @@
 </style>
 
 <article
-  class:no-animate={demo}
   class={emotion}
-  class:bg-color={bgColor || demo}
+  class:bg-color={bgColor}
   class:animation
   class:you={author === 'jij'}
 >

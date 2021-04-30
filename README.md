@@ -126,9 +126,13 @@ Concept 2 is een plug-in voor meerdere chat-apps die de berichten aanvult met de
 
 #### Concept 1
 
+![Screenshot van het tweede concept](docs/concept-3.png)
+
 Je hebt net de nieuwe chat-app Emotion chat gedownloadt. Het unieke selling point van deze chat app is dat je de emotie achter het bericht kan meesturen. Een paar van je vrienden hebben de app ook al gedownload, dus je kan gelijk beginnen met gebruiken. Je hebt net een berichtje gekregen van een oude bekende vriendin Fatima, en wilt daar graag op reageren.
 
 #### Concept 2
+
+![Screenshot van het eerste concept](docs/concept-2.png)
 
 Je hebt net een nieuw programma gedownloadt genaamd Emotion chat. Dit programma haakt in meerdere chat apps om de berichten die je verstuurt aan te vullen met de emotie die achter het bericht zit. Je bent erg opgewonden om het uit te proberen in een van je favoriete vriendengroepen, en stuurt ze een berichtje.
 
@@ -232,6 +236,55 @@ Ik ga meerdere aannames testen, die ik tijdens het testen zal voorleggen om ze t
 ## Concept
 
 In week 4 heb ik me vooral gefocust op het aanvullen van de features die ik al had met een onboarding, achievements en een lijst met ontdekte emoties. Je kan de verschillende inputs nu ook instellen naar persoonlijke voorkeur, en de output-instellingen zijn net iets overzichtelijker. Ook heb ik een demo gemaakt om te kijken hoe de samenhang van emoties te werk zou kunnen gaan.
+
+<figure>
+  <img src="docs/concept-5-intro.png" alt="Screenshot van de eerste pagina die je ziet wanneer je de tool opent">
+  <figcaption>
+    Je wordt begroet met een aangename introductie wanneer je de tool voor het eerst gebruikt.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-input.png" alt="Screenshot van het overzicht van de emotie inputs">
+  <figcaption>
+    De verschillende emotie inputs worden duidelijk aan je uitgelegd met een onboarding.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-output.png" alt="Screenshot van de onboarding stap waar je de emotie output instelt">
+  <figcaption>
+    De verschillende manieren waarop emoties getoond kunnen worden zijn instelbaar.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-chat.png" alt="Screenshot van een chat met Berend">
+  <figcaption>
+    De chat werkt verder hetzelfde als bij de vorige iteratie.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-profile.png" alt="Screenshot van het profielscherm">
+  <figcaption>
+    Je kan nu emoties verzamelen en achievements krijgen om emoties uitzoeken aantrekkelijk te maken.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-settings.png" alt="Screenshot van het instellingenscherm">
+  <figcaption>
+    De opties die je hebt aangepast tijdens de onboarding zijn hier altijd aan te passen naar een eigen nieuwe smaak.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="docs/concept-5-battle.png" alt="Screenshot van het emotie-battle-demo scherm">
+  <figcaption>
+    Een kleine demo van hoe emoties samen zouden kunnen werken, zodat je daarvan in ieder geval een indruk kan krijgen.
+  </figcaption>
+</figure>
 
 ## Vervolg
 

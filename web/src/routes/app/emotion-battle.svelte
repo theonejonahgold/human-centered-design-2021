@@ -370,7 +370,7 @@
     name="Berend Sr. (emotie-battle demo)"
     online={messages.size !== texts.size}
   />
-  <Chat bind:messages />
+  <Chat battleDemo bind:messages />
   {#if texts.size === messages.size}
     <div>
       <button on:click={restart}>Herstart</button>
