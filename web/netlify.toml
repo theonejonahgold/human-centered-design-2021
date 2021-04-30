@@ -1,3 +1,4 @@
 [build]
-  publish = "web/build/"
-  functions = "web/functions/"
+  base = "."
+  publish = "build/"
+  functions = "functions/"
